@@ -1,0 +1,1680 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="Neste waorkflow são implementados os seguintes algoritmos :&#10;Naive Bayes &#10;&#10;SVM &#10;SimpleKMeans&#10;Apriori&#10;EM&#10;Árvore de Decisão" title="Workflow de DataMing" version="2.0">
+	<nodes>
+		<node id="0" name="File" position="(79.0, 182.0)" project_name="Orange" qualified_name="Orange.OrangeWidgets.Data.OWFile.OWFile" title="File" version="" />
+		<node id="1" name="k-Means Clustering" position="(364.0, 311.0)" project_name="Orange" qualified_name="Orange.OrangeWidgets.Unsupervised.OWKMeans.OWKMeans" title="k-Means Clustering" version="" />
+		<node id="2" name="Scatter Plot" position="(597.0, 311.0)" project_name="Orange" qualified_name="Orange.OrangeWidgets.Visualize.OWScatterPlot.OWScatterPlot" title="Scatter Plot" version="" />
+		<node id="3" name="Classification Tree" position="(195.0, 441.0)" project_name="Orange" qualified_name="Orange.OrangeWidgets.Classify.OWClassificationTree.OWClassificationTree" title="Classification Tree" version="" />
+		<node id="4" name="Classification Tree Graph" position="(402.0, 534.0)" project_name="Orange" qualified_name="Orange.OrangeWidgets.Classify.OWClassificationTreeGraph.OWClassificationTreeGraph" title="Classification Tree Graph" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="3" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="3" sink_channel="Classification Tree" sink_node_id="4" source_channel="Classification Tree" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">(dp1
+S'selected_file'
+p2
+VC:/Python27/Lib/site-packages/Orange/datasets/titanic.tab
+p3
+sS'show_advanced'
+p4
+I00
+sS'__settingsDataVersion'
+p5
+NsS'widgetShown'
+p6
+I0
+sS'savedWidgetGeometry'
+p7
+S'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xe6\x00\x00\x00w\x00\x00\x03o\x00\x00\x02I\x00\x00\x01\xee\x00\x00\x00\x96\x00\x00\x03g\x00\x00\x02A\x00\x00\x00\x00\x00\x00'
+p8
+sS'recent_files'
+p9
+(lp10
+g3
+aVC:/Python27/Lib/site-packages/Orange/datasets/breast-cancer-wisconsin.tab
+p11
+aVC:/Python27/Lib/site-packages/Orange/datasets/brown-selected.tab
+p12
+asS'create_new_on'
+p13
+I2
+sS'localContextsVersion'
+p14
+(I100
+I0
+tp15
+sS'localContexts'
+p16
+(lp17
+(iOWContexts
+Context
+p18
+(dp19
+S'time'
+p20
+F1496712638.5580001
+sS'symbolDK'
+p21
+S''
+sS'symbolDC'
+p22
+S''
+sS'filename'
+p23
+g3
+sS'loader'
+p24
+ccopy_reg
+_reconstructor
+p25
+(cOrange.OrangeWidgets.Data.OWFile
+LoadAction
+p26
+c__builtin__
+tuple
+p27
+(S'Tab-delimited files'
+p28
+g25
+(cOrange.OrangeWidgets.Data.OWFile
+OrangeTab
+p29
+g27
+(S''
+S''
+ttRp30
+ttRp31
+sba(iOWContexts
+Context
+p32
+(dp33
+g20
+F1496712283.4070001
+sg21
+S''
+sg22
+S''
+sg23
+g11
+sg24
+g31
+sba(iOWContexts
+Context
+p34
+(dp35
+g24
+g25
+(g26
+g27
+(S'Tab-delimited files'
+p36
+g25
+(g29
+g27
+(S''
+S''
+ttRp37
+ttRp38
+sg22
+S''
+sg21
+S''
+sg23
+g12
+sg20
+F1496712183.26
+sbas.</properties>
+		<properties format="literal" node_id="1">{'scoring': 1, 'widgetShown': 0, 'distanceMeasure': 4, 'classifySelected': 1, 'K': 3, 'runAnyChange': 1, '__settingsDataVersion': None, 'savedWidgetGeometry': '\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xa1\x00\x00\x00E\x00\x00\x02\x98\x00\x00\x02|\x00\x00\x01\xa9\x00\x00\x00d\x00\x00\x02\x90\x00\x00\x02t\x00\x00\x00\x00\x00\x00', 'optimizationFrom': 2, 'restarts': 1, 'optimized': 0, 'addIdAs': 0, 'optimizationTo': 5, 'classifyName': 'Cluster', 'initializationType': 0}</properties>
+		<properties format="pickle" node_id="2">(dp1
+S'autoSendSelection'
+p2
+I1
+sS'graph.showAxisScale'
+p3
+I1
+sS'graph.useAntialiasing'
+p4
+I1
+sS'selectedSchemaIndex'
+p5
+I0
+sS'graph.pointWidth'
+p6
+I8
+sS'graph.showFilledSymbols'
+p7
+I1
+sS'showGridlines'
+p8
+I0
+sS'graph.alphaValue'
+p9
+I255
+sS'savedWidgetGeometry'
+p10
+S'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01E\x00\x00\x00:\x00\x00\x04\xcb\x00\x00\x02v\x00\x00\x01M\x00\x00\x00Y\x00\x00\x04\xc3\x00\x00\x02n\x00\x00\x00\x00\x00\x00'
+p11
+sS'graph.jitterContinuous'
+p12
+I0
+sS'localContexts'
+p13
+(lp14
+(iOWContexts
+Context
+p15
+(dp16
+S'selectionPolygons'
+p17
+(lp18
+sS'metas'
+p19
+(dp20
+S'survived'
+p21
+cOrange.orange
+__pickleLoaderNamedConstants
+p22
+(S'Variable_Type'
+(I1
+ttRp23
+ssS'values'
+p24
+(dp25
+S'attrLabel'
+p26
+(S''
+I-1
+tp27
+sS'attrShape'
+p28
+(S''
+I0
+tp29
+sS'attrX'
+p30
+(S'status'
+p31
+g22
+(S'Variable_Type'
+(I1
+ttRp32
+tp33
+sS'attrY'
+p34
+(S'age'
+p35
+g22
+(S'Variable_Type'
+(I1
+ttRp36
+tp37
+sS'attrSize'
+p38
+(S''
+I0
+tp39
+sS'attrColor'
+p40
+(S'Cluster'
+p41
+g22
+(S'Variable_Type'
+(I1
+ttRp42
+tp43
+ssS'time'
+p44
+F1496712889.822
+sS'attributes'
+p45
+(dp46
+S'status'
+p47
+g32
+sS'Cluster'
+p48
+g42
+sS'age'
+p49
+g36
+sS'sex'
+p50
+g22
+(S'Variable_Type'
+(I1
+ttRp51
+ssS'noCopy'
+p52
+(lp53
+S'orderedDomain'
+p54
+asba(iOWContexts
+Context
+p55
+(dp56
+g17
+(lp57
+sg19
+(dp58
+S'y'
+g22
+(S'Variable_Type'
+(I1
+ttRp59
+ssg24
+(dp60
+g26
+(S''
+I-1
+tp61
+sg28
+(S''
+I0
+tp62
+sg30
+(S'Unif_Cell_Size'
+g22
+(S'Variable_Type'
+(I1
+ttRp63
+tp64
+sg34
+(S'Marginal_Adh'
+g22
+(S'Variable_Type'
+(I1
+ttRp65
+tp66
+sg38
+(S''
+I0
+tp67
+sg40
+(S'Cluster'
+g22
+(S'Variable_Type'
+(I1
+ttRp68
+tp69
+ssg44
+F1496712545.783
+sg45
+(dp70
+S'Single_Cell_Size'
+p71
+g22
+(S'Variable_Type'
+(I1
+ttRp72
+sS'Bland_Chromatine'
+p73
+g22
+(S'Variable_Type'
+(I1
+ttRp74
+sS'Normal_Nucleoi'
+p75
+g22
+(S'Variable_Type'
+(I1
+ttRp76
+sS'Cluster'
+p77
+g68
+sS'Marginal_Adh'
+p78
+g65
+sS'Unif_Cell_Shape'
+p79
+g22
+(S'Variable_Type'
+(I1
+ttRp80
+sS'Mitoses'
+p81
+g22
+(S'Variable_Type'
+(I1
+ttRp82
+sS'Bare_Nuclei'
+p83
+g22
+(S'Variable_Type'
+(I1
+ttRp84
+sS'Unif_Cell_Size'
+p85
+g63
+sS'Clump'
+p86
+g22
+(S'Variable_Type'
+(I1
+ttRp87
+ssg52
+(lp88
+g54
+asba(iOWContexts
+Context
+p89
+(dp90
+g17
+(lp91
+sg19
+(dp92
+S'function'
+p93
+g22
+(S'Variable_Type'
+(I1
+ttRp94
+sS'gene'
+p95
+g22
+(S'Variable_Type'
+(I6
+ttRp96
+ssg24
+(dp97
+g26
+(S'alpha 0'
+p98
+g22
+(S'Variable_Type'
+(I2
+ttRp99
+tp100
+sg28
+(S''
+I0
+tp101
+sg30
+(S'alpha 0'
+p102
+g99
+tp103
+sg34
+(S'alpha 7'
+p104
+g22
+(S'Variable_Type'
+(I2
+ttRp105
+tp106
+sg38
+(S''
+I0
+tp107
+sg40
+(S'Cluster'
+g22
+(S'Variable_Type'
+(I1
+ttRp108
+tp109
+ssg44
+F1451514330.6530001
+sg45
+(dp110
+S'Elu 270'
+p111
+g22
+(S'Variable_Type'
+(I2
+ttRp112
+sS'spo5 7'
+p113
+g22
+(S'Variable_Type'
+(I2
+ttRp114
+sS'Elu 390'
+p115
+g22
+(S'Variable_Type'
+(I2
+ttRp116
+sS'alpha 56'
+p117
+g22
+(S'Variable_Type'
+(I2
+ttRp118
+sS'Elu 210'
+p119
+g22
+(S'Variable_Type'
+(I2
+ttRp120
+sS'Elu 60'
+p121
+g22
+(S'Variable_Type'
+(I2
+ttRp122
+sS'cold 160'
+p123
+g22
+(S'Variable_Type'
+(I2
+ttRp124
+sS'Elu 330'
+p125
+g22
+(S'Variable_Type'
+(I2
+ttRp126
+sS'heat 80'
+p127
+g22
+(S'Variable_Type'
+(I2
+ttRp128
+sS'cold 0'
+p129
+g22
+(S'Variable_Type'
+(I2
+ttRp130
+sS'spo- mid'
+p131
+g22
+(S'Variable_Type'
+(I2
+ttRp132
+sS'dtt 15'
+p133
+g22
+(S'Variable_Type'
+(I2
+ttRp134
+sS'spo 9'
+p135
+g22
+(S'Variable_Type'
+(I2
+ttRp136
+sS'alpha 91'
+p137
+g22
+(S'Variable_Type'
+(I2
+ttRp138
+sS'alpha 112'
+p139
+g22
+(S'Variable_Type'
+(I2
+ttRp140
+sS'alpha 105'
+p141
+g22
+(S'Variable_Type'
+(I2
+ttRp142
+sS'dtt 30'
+p143
+g22
+(S'Variable_Type'
+(I2
+ttRp144
+sS'alpha 98'
+p145
+g22
+(S'Variable_Type'
+(I2
+ttRp146
+sS'Elu 150'
+p147
+g22
+(S'Variable_Type'
+(I2
+ttRp148
+sS'cold 20'
+p149
+g22
+(S'Variable_Type'
+(I2
+ttRp150
+sS'Cluster'
+p151
+g108
+sS'alpha 0'
+p152
+g99
+sS'alpha 7'
+p153
+g105
+sS'spo- early'
+p154
+g22
+(S'Variable_Type'
+(I2
+ttRp155
+sS'diau a'
+p156
+g22
+(S'Variable_Type'
+(I2
+ttRp157
+sS'diau b'
+p158
+g22
+(S'Variable_Type'
+(I2
+ttRp159
+sS'alpha 21'
+p160
+g22
+(S'Variable_Type'
+(I2
+ttRp161
+sS'diau e'
+p162
+g22
+(S'Variable_Type'
+(I2
+ttRp163
+sS'diau d'
+p164
+g22
+(S'Variable_Type'
+(I2
+ttRp165
+sS'spo5 11'
+p166
+g22
+(S'Variable_Type'
+(I2
+ttRp167
+sS'diau f'
+p168
+g22
+(S'Variable_Type'
+(I2
+ttRp169
+sS'cdc15 290'
+p170
+g22
+(S'Variable_Type'
+(I2
+ttRp171
+sS'cold 40'
+p172
+g22
+(S'Variable_Type'
+(I2
+ttRp173
+sS'alpha 28'
+p174
+g22
+(S'Variable_Type'
+(I2
+ttRp175
+sS'Elu 30'
+p176
+g22
+(S'Variable_Type'
+(I2
+ttRp177
+sS'dtt 60'
+p178
+g22
+(S'Variable_Type'
+(I2
+ttRp179
+sS'Elu 300'
+p180
+g22
+(S'Variable_Type'
+(I2
+ttRp181
+sS'heat 40'
+p182
+g22
+(S'Variable_Type'
+(I2
+ttRp183
+sS'alpha 42'
+p184
+g22
+(S'Variable_Type'
+(I2
+ttRp185
+sS'cdc15 170'
+p186
+g22
+(S'Variable_Type'
+(I2
+ttRp187
+sS'alpha 63'
+p188
+g22
+(S'Variable_Type'
+(I2
+ttRp189
+sS'Elu 360'
+p190
+g22
+(S'Variable_Type'
+(I2
+ttRp191
+sS'heat 160'
+p192
+g22
+(S'Variable_Type'
+(I2
+ttRp193
+sS'dtt 120'
+p194
+g22
+(S'Variable_Type'
+(I2
+ttRp195
+sS'alpha 49'
+p196
+g22
+(S'Variable_Type'
+(I2
+ttRp197
+sS'Elu 180'
+p198
+g22
+(S'Variable_Type'
+(I2
+ttRp199
+sS'heat 20'
+p200
+g22
+(S'Variable_Type'
+(I2
+ttRp201
+sS'Elu 240'
+p202
+g22
+(S'Variable_Type'
+(I2
+ttRp203
+sS'cdc15 150'
+p204
+g22
+(S'Variable_Type'
+(I2
+ttRp205
+sS'alpha 84'
+p206
+g22
+(S'Variable_Type'
+(I2
+ttRp207
+sS'cdc15 110'
+p208
+g22
+(S'Variable_Type'
+(I2
+ttRp209
+sS'alpha 119'
+p210
+g22
+(S'Variable_Type'
+(I2
+ttRp211
+sS'spo 2'
+p212
+g22
+(S'Variable_Type'
+(I2
+ttRp213
+sS'cdc15 130'
+p214
+g22
+(S'Variable_Type'
+(I2
+ttRp215
+sS'spo 11'
+p216
+g22
+(S'Variable_Type'
+(I2
+ttRp217
+sS'Elu 90'
+p218
+g22
+(S'Variable_Type'
+(I2
+ttRp219
+sS'cdc15 270'
+p220
+g22
+(S'Variable_Type'
+(I2
+ttRp221
+sS'diau g'
+p222
+g22
+(S'Variable_Type'
+(I2
+ttRp223
+sS'cdc15 230'
+p224
+g22
+(S'Variable_Type'
+(I2
+ttRp225
+sS'spo 0'
+p226
+g22
+(S'Variable_Type'
+(I2
+ttRp227
+sS'cdc15 30'
+p228
+g22
+(S'Variable_Type'
+(I2
+ttRp229
+sS'spo 5'
+p230
+g22
+(S'Variable_Type'
+(I2
+ttRp231
+sS'spo 7'
+p232
+g22
+(S'Variable_Type'
+(I2
+ttRp233
+sS'cdc15 250'
+p234
+g22
+(S'Variable_Type'
+(I2
+ttRp235
+sS'diau c'
+p236
+g22
+(S'Variable_Type'
+(I2
+ttRp237
+sS'Elu 120'
+p238
+g22
+(S'Variable_Type'
+(I2
+ttRp239
+sS'Elu 0'
+p240
+g22
+(S'Variable_Type'
+(I2
+ttRp241
+sS'cdc15 90'
+p242
+g22
+(S'Variable_Type'
+(I2
+ttRp243
+sS'cdc15 190'
+p244
+g22
+(S'Variable_Type'
+(I2
+ttRp245
+sS'cdc15 50'
+p246
+g22
+(S'Variable_Type'
+(I2
+ttRp247
+sS'alpha 35'
+p248
+g22
+(S'Variable_Type'
+(I2
+ttRp249
+sS'cdc15 10'
+p250
+g22
+(S'Variable_Type'
+(I2
+ttRp251
+sS'spo5 2'
+p252
+g22
+(S'Variable_Type'
+(I2
+ttRp253
+sS'heat 10'
+p254
+g22
+(S'Variable_Type'
+(I2
+ttRp255
+sS'heat 0'
+p256
+g22
+(S'Variable_Type'
+(I2
+ttRp257
+sS'cdc15 70'
+p258
+g22
+(S'Variable_Type'
+(I2
+ttRp259
+sS'alpha 70'
+p260
+g22
+(S'Variable_Type'
+(I2
+ttRp261
+sS'alpha 14'
+p262
+g22
+(S'Variable_Type'
+(I2
+ttRp263
+sS'cdc15 210'
+p264
+g22
+(S'Variable_Type'
+(I2
+ttRp265
+sS'alpha 77'
+p266
+g22
+(S'Variable_Type'
+(I2
+ttRp267
+ssg52
+(lp268
+S'orderedDomain'
+p269
+asba(iOWContexts
+Context
+p270
+(dp271
+g17
+(lp272
+sg19
+(dp273
+S'gene'
+p274
+g22
+(S'Variable_Type'
+(I6
+ttRp275
+ssg24
+(dp276
+S'attrLabel'
+p277
+(g98
+g22
+(S'Variable_Type'
+(I2
+ttRp278
+tp279
+sS'attrShape'
+p280
+(S'function'
+g22
+(S'Variable_Type'
+(I1
+ttRp281
+tp282
+sS'attrX'
+p283
+(g102
+g278
+tp284
+sS'attrY'
+p285
+(g104
+g22
+(S'Variable_Type'
+(I2
+ttRp286
+tp287
+sS'attrSize'
+p288
+(S''
+I0
+tp289
+sS'attrColor'
+p290
+(S'function'
+g281
+tp291
+ssg44
+F1451514330.6530001
+sg45
+(dp292
+S'Elu 270'
+p293
+g22
+(S'Variable_Type'
+(I2
+ttRp294
+sS'spo5 7'
+p295
+g22
+(S'Variable_Type'
+(I2
+ttRp296
+sS'alpha 14'
+p297
+g22
+(S'Variable_Type'
+(I2
+ttRp298
+sS'Elu 390'
+p299
+g22
+(S'Variable_Type'
+(I2
+ttRp300
+sS'alpha 56'
+p301
+g22
+(S'Variable_Type'
+(I2
+ttRp302
+sS'Elu 210'
+p303
+g22
+(S'Variable_Type'
+(I2
+ttRp304
+sS'Elu 60'
+p305
+g22
+(S'Variable_Type'
+(I2
+ttRp306
+sS'cdc15 130'
+p307
+g22
+(S'Variable_Type'
+(I2
+ttRp308
+sS'Elu 330'
+p309
+g22
+(S'Variable_Type'
+(I2
+ttRp310
+sS'cdc15 50'
+p311
+g22
+(S'Variable_Type'
+(I2
+ttRp312
+sS'spo 11'
+p313
+g22
+(S'Variable_Type'
+(I2
+ttRp314
+sS'spo- mid'
+p315
+g22
+(S'Variable_Type'
+(I2
+ttRp316
+sS'dtt 15'
+p317
+g22
+(S'Variable_Type'
+(I2
+ttRp318
+sS'alpha 91'
+p319
+g22
+(S'Variable_Type'
+(I2
+ttRp320
+sS'Elu 90'
+p321
+g22
+(S'Variable_Type'
+(I2
+ttRp322
+sS'alpha 105'
+p323
+g22
+(S'Variable_Type'
+(I2
+ttRp324
+sS'dtt 30'
+p325
+g22
+(S'Variable_Type'
+(I2
+ttRp326
+sS'alpha 98'
+p327
+g22
+(S'Variable_Type'
+(I2
+ttRp328
+sS'Elu 150'
+p329
+g22
+(S'Variable_Type'
+(I2
+ttRp330
+sS'cold 20'
+p331
+g22
+(S'Variable_Type'
+(I2
+ttRp332
+sS'Elu 120'
+p333
+g22
+(S'Variable_Type'
+(I2
+ttRp334
+sS'cdc15 10'
+p335
+g22
+(S'Variable_Type'
+(I2
+ttRp336
+sS'alpha 0'
+p337
+g278
+sS'alpha 7'
+p338
+g286
+sS'heat 80'
+p339
+g22
+(S'Variable_Type'
+(I2
+ttRp340
+sS'diau a'
+p341
+g22
+(S'Variable_Type'
+(I2
+ttRp342
+sS'diau c'
+p343
+g22
+(S'Variable_Type'
+(I2
+ttRp344
+sS'diau b'
+p345
+g22
+(S'Variable_Type'
+(I2
+ttRp346
+sS'diau e'
+p347
+g22
+(S'Variable_Type'
+(I2
+ttRp348
+sS'diau d'
+p349
+g22
+(S'Variable_Type'
+(I2
+ttRp350
+sS'spo5 11'
+p351
+g22
+(S'Variable_Type'
+(I2
+ttRp352
+sS'diau f'
+p353
+g22
+(S'Variable_Type'
+(I2
+ttRp354
+sS'cold 160'
+p355
+g22
+(S'Variable_Type'
+(I2
+ttRp356
+sS'alpha 28'
+p357
+g22
+(S'Variable_Type'
+(I2
+ttRp358
+sS'Elu 30'
+p359
+g22
+(S'Variable_Type'
+(I2
+ttRp360
+sS'cdc15 70'
+p361
+g22
+(S'Variable_Type'
+(I2
+ttRp362
+sS'function'
+p363
+g281
+sS'heat 40'
+p364
+g22
+(S'Variable_Type'
+(I2
+ttRp365
+sS'alpha 42'
+p366
+g22
+(S'Variable_Type'
+(I2
+ttRp367
+sS'cdc15 170'
+p368
+g22
+(S'Variable_Type'
+(I2
+ttRp369
+sS'alpha 63'
+p370
+g22
+(S'Variable_Type'
+(I2
+ttRp371
+sS'Elu 360'
+p372
+g22
+(S'Variable_Type'
+(I2
+ttRp373
+sS'heat 160'
+p374
+g22
+(S'Variable_Type'
+(I2
+ttRp375
+sS'dtt 120'
+p376
+g22
+(S'Variable_Type'
+(I2
+ttRp377
+sS'alpha 49'
+p378
+g22
+(S'Variable_Type'
+(I2
+ttRp379
+sS'Elu 180'
+p380
+g22
+(S'Variable_Type'
+(I2
+ttRp381
+sS'heat 20'
+p382
+g22
+(S'Variable_Type'
+(I2
+ttRp383
+sS'Elu 240'
+p384
+g22
+(S'Variable_Type'
+(I2
+ttRp385
+sS'cdc15 150'
+p386
+g22
+(S'Variable_Type'
+(I2
+ttRp387
+sS'alpha 84'
+p388
+g22
+(S'Variable_Type'
+(I2
+ttRp389
+sS'cdc15 110'
+p390
+g22
+(S'Variable_Type'
+(I2
+ttRp391
+sS'cdc15 290'
+p392
+g22
+(S'Variable_Type'
+(I2
+ttRp393
+sS'cold 40'
+p394
+g22
+(S'Variable_Type'
+(I2
+ttRp395
+sS'cold 0'
+p396
+g22
+(S'Variable_Type'
+(I2
+ttRp397
+sS'alpha 112'
+p398
+g22
+(S'Variable_Type'
+(I2
+ttRp399
+sS'cdc15 270'
+p400
+g22
+(S'Variable_Type'
+(I2
+ttRp401
+sS'diau g'
+p402
+g22
+(S'Variable_Type'
+(I2
+ttRp403
+sS'cdc15 230'
+p404
+g22
+(S'Variable_Type'
+(I2
+ttRp405
+sS'spo 0'
+p406
+g22
+(S'Variable_Type'
+(I2
+ttRp407
+sS'spo 2'
+p408
+g22
+(S'Variable_Type'
+(I2
+ttRp409
+sS'spo 5'
+p410
+g22
+(S'Variable_Type'
+(I2
+ttRp411
+sS'cdc15 250'
+p412
+g22
+(S'Variable_Type'
+(I2
+ttRp413
+sS'spo 7'
+p414
+g22
+(S'Variable_Type'
+(I2
+ttRp415
+sS'spo 9'
+p416
+g22
+(S'Variable_Type'
+(I2
+ttRp417
+sS'Elu 0'
+p418
+g22
+(S'Variable_Type'
+(I2
+ttRp419
+sS'cdc15 90'
+p420
+g22
+(S'Variable_Type'
+(I2
+ttRp421
+sS'Elu 300'
+p422
+g22
+(S'Variable_Type'
+(I2
+ttRp423
+sS'alpha 119'
+p424
+g22
+(S'Variable_Type'
+(I2
+ttRp425
+sS'alpha 35'
+p426
+g22
+(S'Variable_Type'
+(I2
+ttRp427
+sS'dtt 60'
+p428
+g22
+(S'Variable_Type'
+(I2
+ttRp429
+sS'spo- early'
+p430
+g22
+(S'Variable_Type'
+(I2
+ttRp431
+sS'heat 10'
+p432
+g22
+(S'Variable_Type'
+(I2
+ttRp433
+sS'heat 0'
+p434
+g22
+(S'Variable_Type'
+(I2
+ttRp435
+sS'cdc15 190'
+p436
+g22
+(S'Variable_Type'
+(I2
+ttRp437
+sS'spo5 2'
+p438
+g22
+(S'Variable_Type'
+(I2
+ttRp439
+sS'alpha 70'
+p440
+g22
+(S'Variable_Type'
+(I2
+ttRp441
+sS'cdc15 30'
+p442
+g22
+(S'Variable_Type'
+(I2
+ttRp443
+sS'cdc15 210'
+p444
+g22
+(S'Variable_Type'
+(I2
+ttRp445
+sS'alpha 77'
+p446
+g22
+(S'Variable_Type'
+(I2
+ttRp447
+sS'alpha 21'
+p448
+g22
+(S'Variable_Type'
+(I2
+ttRp449
+ssg52
+(lp450
+g269
+asbasS'graph.jitterSize'
+p451
+I5
+sS'graph.showProbabilities'
+p452
+I0
+sS'graph.showXaxisTitle'
+p453
+I1
+sS'widgetShown'
+p454
+I0
+sS'graph.showLegend'
+p455
+I1
+sS'__settingsDataVersion'
+p456
+NsS'localContextsVersion'
+p457
+(I100
+I0
+tp458
+sS'graph.showYLaxisTitle'
+p459
+I1
+sS'toolbarSelection'
+p460
+I0
+sS'graph.sendSelectionOnUpdate'
+p461
+I0
+sS'graph.showDistributions'
+p462
+NsS'colorSettings'
+p463
+NsS'VizRankLearnerName'
+p464
+Ns.</properties>
+		<properties format="literal" node_id="3">{'bin': 0, 'subset': 0, 'preNodeMajP': 95, 'name': 'Classification Tree', 'postMaj': 1, 'preNodeInst': 0, 'postMPruning': 1, 'savedWidgetGeometry': '\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xff\x00\x00\x009\x00\x00\x03W\x00\x00\x02\x88\x00\x00\x02\x02\x00\x00\x00S\x00\x00\x03T\x00\x00\x02\x85\x00\x00\x00\x00\x00\x00', 'limitDepth': False, 'relK': 5, 'widgetShown': 0, 'postM': 2.0, 'estim': 0, 'maxDepth': 100, 'relM': 100, 'preNodeInstP': 5, 'preLeafInstP': 2, '__settingsDataVersion': None, 'preLeafInst': 1, 'preNodeMaj': 0}</properties>
+		<properties format="pickle" node_id="4">(dp1
+S'NodeInfo'
+p2
+(lp3
+I0
+aI1
+asS'AutoArrange'
+p4
+I0
+sS'ShowPies'
+p5
+I1
+sS'LineWidthMethod'
+p6
+I2
+sS'LineWidth'
+p7
+I15
+sS'MaxTreeDepthB'
+p8
+I0
+sS'LimitNodeWidth'
+p9
+I01
+sS'HSpacing'
+p10
+I1
+sS'ToolTipsEnabled'
+p11
+I1
+sS'MaxNodeWidth'
+p12
+I150
+sS'savedWidgetGeometry'
+p13
+S'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\x13\x00\x00\x00\x0f\x00\x00\x05\x12\x00\x00\x02\xb1\x00\x00\x01\x1b\x00\x00\x00.\x00\x00\x05\n\x00\x00\x02\xa9\x00\x00\x00\x00\x00\x00'
+p14
+sS'colorSettings'
+p15
+NsS'MaxTreeDepth'
+p16
+I5
+sS'VSpacing'
+p17
+I1
+sS'TruncateText'
+p18
+I1
+sS'Zoom'
+p19
+I5
+sS'widgetShown'
+p20
+I0
+sS'NodeColorMethod'
+p21
+I2
+sS'localContextsVersion'
+p22
+(I100
+I0
+tp23
+sS'localContexts'
+p24
+(lp25
+(iOWContexts
+Context
+p26
+(dp27
+S'metas'
+p28
+(dp29
+sS'values'
+p30
+(dp31
+S'TargetClassIndex'
+p32
+(I0
+I-2
+tp33
+ssS'time'
+p34
+F1496712638.596
+sS'attributes'
+p35
+(dp36
+S'status'
+p37
+cOrange.orange
+__pickleLoaderNamedConstants
+p38
+(S'Variable_Type'
+(I1
+ttRp39
+sS'age'
+p40
+g38
+(S'Variable_Type'
+(I1
+ttRp41
+sS'survived'
+p42
+cOrange.core
+StringList
+p43
+(tRp44
+S'no'
+aS'yes'
+a(dbsS'sex'
+p45
+g38
+(S'Variable_Type'
+(I1
+ttRp46
+ssS'noCopy'
+p47
+(lp48
+S'orderedDomain'
+p49
+asba(iOWContexts
+Context
+p50
+(dp51
+g28
+(dp52
+sg30
+(dp53
+g32
+(I0
+I-2
+tp54
+ssg34
+F1496712404.2679999
+sg35
+(dp55
+S'Single_Cell_Size'
+p56
+g38
+(S'Variable_Type'
+(I1
+ttRp57
+sS'Bland_Chromatine'
+p58
+g38
+(S'Variable_Type'
+(I1
+ttRp59
+sS'Normal_Nucleoi'
+p60
+g38
+(S'Variable_Type'
+(I1
+ttRp61
+sS'y'
+g43
+(tRp62
+S'2'
+aS'4'
+a(dbsS'Marginal_Adh'
+p63
+g38
+(S'Variable_Type'
+(I1
+ttRp64
+sS'Unif_Cell_Shape'
+p65
+g38
+(S'Variable_Type'
+(I1
+ttRp66
+sS'Mitoses'
+p67
+g38
+(S'Variable_Type'
+(I1
+ttRp68
+sS'Bare_Nuclei'
+p69
+g38
+(S'Variable_Type'
+(I1
+ttRp70
+sS'Unif_Cell_Size'
+p71
+g38
+(S'Variable_Type'
+(I1
+ttRp72
+sS'Clump'
+p73
+g38
+(S'Variable_Type'
+(I1
+ttRp74
+ssg47
+(lp75
+g49
+asbasS'ZoomAutoRefresh'
+p76
+I0
+sS'__settingsDataVersion'
+p77
+NsS'selectedColorSettingsIndex'
+p78
+I0
+s.</properties>
+	</node_properties>
+</scheme>
